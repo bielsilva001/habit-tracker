@@ -9,6 +9,82 @@
     <title>Habit Tracker</title>
 </head>
 <body>
-    <h1>Teste</h1>
+    
+    <main class="auth-container">
+
+        <header class="auth-header">
+
+            <h1>Habit Tracker</h1>
+            <p>Construa consistência, um dia de cada vez.</p>
+
+        </header>
+
+        <!-- Formulario de Login -->
+        <section id="secao-login" class="auth-card">
+
+            <h2>Entrar na conta</h2>
+
+            <form id="form-login">
+
+                <div class="form-group">
+
+                    <label for="Login-email">E-mail</label>
+                    <input type="email" id="login-email" placeholder="seu@email.com" required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="Login-senha">Senha</label>
+                    <input type="password" id="login-senha" placeholder="**********" required>
+
+                </div>
+
+                <button type="submit" class="btn-primary">Entrar</button>
+
+            </form>
+
+            <p class="auth-switch">
+                Ainda não tem conta? <button type="button" id="btn-cadastro"></button>
+            </p>
+
+        </section>
+
+        <!-- Formulario de Cadastro(Oculto Inicialmente) -->
+
+        <section id="secao-cadastro" class="auth-card" hidden>
+
+            <h2>Criar nova conta</h2>
+
+            <form id="form-cadastro">
+
+                <div class="form-group">
+
+                    <label for="cadastro-nome">Nome completo</label>
+                    <input type="text" id="cadastro-nome" placeholder="Ex: João da Silva" required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="cadastro-email">E-mail</label>
+                    <input type="email" id="cadastro-email" placeholder="seu@email.com" required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="cadastro-senha">Senha</label>
+                    <input type="password" id="cadastro-senha" placeholder="Minimo 8 caracteres" minlength="8" required>
+
+                </div>
+
+                <button type="submit" class="btn-primary">Criar Conta</button>
+                
+            </form>
+        </section>
+
+    </main>
+
 </body>
 </html>
