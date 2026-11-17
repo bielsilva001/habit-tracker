@@ -2,7 +2,7 @@
 
 /* RESET CSS*/
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
 
 /* Criando o System Designer do Projeto */
 
-:root{
+:root {
 
     /* Tipografia */
     --font-family-outfit: 'Outfit', s-apple-system, BlinkMacSystemFont, sans-serif;
@@ -38,4 +38,58 @@
     --weight-semibold: 600;
     --weight-bold: 700;
     --weight-extrabold: 800;
+
+
+    /* Variáveis de Cor Identidade Visual*/
+
+    --color-primary: #2038E2;
+    --color-primary-hover: #192DB8;
+    --color-primary-active: #142494;
+    --color-primary-light: #E8ECFF;
+    --color-primary-dark: #1729AB;
+
+    --color-secondary: #007BFF;
+    --color-secundary-hover: #0066D6;
+    --color-secondary-light: #E5F2FF;
+    --color-secondary-dark: #0056B3;
+
+    --color-accent: #FF5A00;
+    --color-accent-hover: #E64F00;
+    --color-accent-light: #FFF0E6;
+    --color-accent-dark: #C94400;
+
+    /* Cores Neutras */
+
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    --color-beige: #FFE6D0;
+    --color-beige-light: #FFF8F2;
+    --color-beige-dark: #F2D1B5;
+
+    --color-charcoal: #1A1A1A;
+    --color-gray-900: #252525;
+    --color-gray-800: #3D3D3D;
+    --color-gray-700: #555555;
+    --color-gray-600: #666666;
+    --color-gray-500: #888888;
+    --color-gray-400: #AAAAAA;
+    --color-gray-300: #CCCCCC;
+    --color-gray-200: #E0E0E0;
+    --color-gray-100: #F2F2F2;
+
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-gray-100);
+    color: var(--color-gray-900);
+}
+
+button, input{
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
 }
